@@ -9,11 +9,13 @@ const initialState = {
   error: "",
 };
 
+// Actions
 const ACTIONS = {
   FETCH_REQUEST: "FETCH_BOOKS_REQUEST",
   FETCH_SUCCESS: "FETCH_BOOKS_SUCCESS",
   FETCH_FAIL: "FETCH_BOOKS_FAILURE",
 };
+
 const reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.FETCH_REQUEST:
@@ -29,7 +31,7 @@ const reducer = (state, action) => {
 
 const Books = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(""); //State for serach bar
   const [filteredBooks, setFilteredBooks] = useState([]); // State for filtered books
   const url = "/books";
 
@@ -51,15 +53,14 @@ const Books = () => {
   const { books, loading, error } = state;
 
   // Handle input change in search bar
-  const handleSearchInputChange = (event) => {
+  const handleSearchInput = (event) => {
     setSearchQuery(event.target.value);
   };
 
   // Handle search button click
-
-  const handleSearchButtonClick = () => {
+  const handleSearchButton = () => {
     if (searchQuery.trim() === "") {
-      setFilteredBooks(books); // If search query is empty, show all books
+      setFilteredBooks(books); //Show all book if serach bar is empty
     } else {
       const filtered = books.filter((book) =>
         book.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -68,8 +69,6 @@ const Books = () => {
     }
   };
   return (
-    
-
     <div className="app">
       <nav>
         <h1>Book Finder</h1>
@@ -79,9 +78,9 @@ const Books = () => {
             id="search-input"
             placeholder="Search for books..."
             value={searchQuery}
-            onChange={handleSearchInputChange}
+            onChange={handleSearchInput}
           />
-          <button id="search-button" onClick={handleSearchButtonClick}>
+          <button id="search-button" onClick={handleSearchButton}>
             Search
           </button>
         </div>
@@ -138,15 +137,12 @@ const Books = () => {
                 {" "}
                 <a href="#">Contact us</a>
               </li>
-              
             </ul>
           </div>
-          
         </div>
         <p>&copy; 2024 Book Finder. All rights reserved.</p>
       </footer>
     </div>
-    
   );
 };
 
