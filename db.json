@@ -1,0 +1,78 @@
+{
+ 
+  "books": [
+    {
+      "id": 1,
+      "title": "Harry potter",
+      "author": "J K Rowling",
+      "src": "/images/image1.jpg",
+      "alt": "Harry potter cover",
+      "description":"'Harry Potter' is a captivating fantasy series by J.K. Rowling that follows the journey of a young wizard, Harry Potter, who discovers his magical heritage on his eleventh birthday. Raised by his neglectful relatives, Harry learns he is famous in the wizarding world for surviving an attack by the dark wizard Voldemort. Over seven books, Harry navigates the trials of magical education at Hogwarts School of Witchcraft and Wizardry, forms deep friendships, and battles dark forces threatening both the wizarding and non-magical worlds. Themes of bravery, friendship, and the fight between good and evil are central to this enchanting tale."
+    },
+    {
+      "id": 2,
+      "title": "Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "src": "/images/image2.jpeg",
+      "alt": "Lord of the Rings cover",
+      "description": "J.R.R. Tolkien's 'The Lord of the Rings' is an epic fantasy trilogy set in the mythical world of Middle-earth. It follows the journey of Frodo Baggins, a hobbit tasked with destroying a powerful ring that could bring darkness to the world. Alongside a diverse fellowship, including Aragorn, Legolas, Gimli, and Gandalf, Frodo faces treacherous landscapes and formidable enemies. The saga intricately explores themes of heroism, friendship, and the struggle between good and evil. With richly developed characters and a meticulously crafted world, Tolkien’s work is a cornerstone of fantasy literature, celebrating courage and the enduring power of hope."
+    },
+    {
+      "id": 3,
+      "title": "Wimpy Kid",
+      "author": "Jeff Kinney",
+      "src": "/images/image3.jpg",
+      "alt": "Wimpy Kid cover",
+      "description": "'Diary of a Wimpy Kid' by Jeff Kinney is a humorous and relatable novel featuring Greg Heffley, a middle school student navigating the ups and downs of adolescence. Presented in a diary format with witty text and cartoon illustrations, the book chronicles Greg's trials with family, friends, and school life. From awkward social situations to his bumbling attempts to fit in, Greg’s candid reflections and comedic mishaps offer a fresh perspective on growing up. The series captures the everyday challenges of adolescence with a blend of humor and heart, making it a beloved read for both kids and adults."
+    },
+    {
+      "id": 4,
+      "title": "Nancy drew",
+      "author": "Carolyn Keene",
+      "src": "/images/image4.jpeg",
+      "alt": "Nancy drew cover",
+      "description": " 'Nancy Drew' is a classic mystery series created by Carolyn Keene, centering on a clever and resourceful teenage sleuth. In the books, Nancy Drew, an intrepid 16-year-old detective, solves intriguing cases in her hometown of River Heights and beyond. With her keen observational skills, intelligence, and determination, Nancy tackles a range of mysteries, from stolen jewelry to hidden secrets, often with the help of her friends Bess and George. Her adventures combine suspense, drama, and problem-solving, making her an enduring role model for young readers. The series celebrates curiosity, bravery, and the power of deductive reasoning in unraveling mysteries."
+      
+    },
+    {
+      "id": 5,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "src": "/images/image5.jpg",
+      "alt": "Pride and Prejudice cover",
+      "description": " 'Pride and Prejudice' by Jane Austen is a classic novel set in early 19th-century England. It follows Elizabeth Bennet, a sharp-witted and independent young woman, as she navigates issues of class, marriage, and morality in her pursuit of personal happiness. Central to the story is her evolving relationship with the wealthy and aloof Mr. Darcy. Austen’s keen observations and witty dialogue explore themes of social expectations, individual agency, and romantic misunderstandings. Through Elizabeth’s journey and the complexities of her interactions, the novel delves into the intricacies of human behavior and societal norms, offering a timeless commentary on love and relationships."
+    },
+    {
+      "id": 6,
+      "title": "To Kill a Mocking Bird",
+      "author": "Harper Lee",
+      "src": "/images/image6.jpg",
+      "alt": "To Kill a Mocking Bird cover",
+      "description": "'To Kill a Mockingbird' by Harper Lee is a poignant novel set in the racially charged American South during the 1930s. It follows Scout Finch, a young girl, as she navigates the complexities of her small town and witnesses her father, Atticus Finch, a principled lawyer, defend a black man accused of raping a white woman. Through Scout's eyes, the novel explores themes of racial injustice, moral growth, and empathy. Atticus’s commitment to justice and his children's coming-of-age experiences highlight the profound impact of prejudice and the importance of compassion and understanding in a divided society."
+    },
+    {
+      "id": 7,
+      "title": "Little Women",
+      "author": "Louisa May Alcott",
+      "src": "/images/image7.jpeg",
+      "alt": "Littel Women cover",
+      "description": "'Little Women'by Louisa May Alcott is a cherished novel that follows the lives of the four March sisters—Meg, Jo, Beth, and Amy—growing up in Civil War-era New England. Through their trials and triumphs, the book explores themes of family, love, and personal growth. The sisters, each with distinct personalities and dreams, navigate societal expectations and personal ambitions while their mother, Marmee, provides guidance and support. As they face challenges and celebrate successes, 'Little Women' offers a rich portrayal of sisterhood and the pursuit of individual dreams against the backdrop of historical and social changes."
+    },
+    {
+      "id": 8,
+      "title": "A Good Girls Guide to Murder",
+      "author": "Collen Hover",
+      "src": "/images/image8.jpg",
+      "alt": "A Good Girls Guide to Murder cover",
+      "description": "'A Good Girl's Guide to Murder' by Holly Jackson is a gripping young adult mystery novel centered on Pippa Fitz-Amobi, a high school senior who investigates a local murder case for her senior project. The case involves the 2014 disappearance of Andie Bell, a popular student, and the wrongful conviction of her alleged killer, Sal Singh. As Pippa delves deeper into the investigation, she uncovers hidden secrets and faces growing danger. With its clever plot twists and engaging narrative style, the novel explores themes of truth, justice, and the impact of crime on a community, offering readers a suspenseful and thought-provoking experience."
+    },
+    {
+      "id": 9,
+      "title": "The Diary of a Young Girl",
+      "author": "Anne Frank",
+      "src": "/images/image9.jpg",
+      "alt": "The Diary of a Young Girl cover",
+      "description": "'The Diary of a Young Girl' by Anne Frank is a poignant and powerful memoir detailing the life of Anne Frank, a Jewish teenager hiding from the Nazis during World War II. Written between 1942 and 1944, the diary captures Anne’s thoughts, fears, and hopes while she and her family live in secret annex in Amsterdam. Through her candid and insightful entries, Anne reflects on her experiences, personal growth, and the harsh realities of war. Her writing offers a deeply human perspective on courage, resilience, and the devastating impact of persecution, making it a timeless and important testament to the human spirit."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+.header{
+  margin: 0;
+  padding: 0;
+  background-color: #efc77c;
+  border-radius: 5px;
+}
+
+.back-button{
+  padding: 5px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.back-button:hover{
+  background-color: #fff;
+  color: #333
+}
+
+.book-detail {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.book-detail h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-detail p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.book-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
