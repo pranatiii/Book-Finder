@@ -88,10 +88,7 @@ nav.search-bar {
 }
 
 main {
-  display: flex;
   flex: 1;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .book-list {
@@ -163,15 +160,14 @@ footer {
 }
 
 /*For not found page*/
-.not-found{
-    text-align: center;
-    margin:20px;
+.not-found {
+  text-align: center;
+  margin: 20px;
 }
 
-.transition-fade{
- opacity: 1;
- transition: 500ms;
-
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
 }
 
 @media (prefers-reduced-motion: no-preference) {
