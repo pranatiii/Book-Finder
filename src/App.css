@@ -162,6 +162,18 @@ footer {
   margin-bottom: 30px;
 }
 
+/*For not found page*/
+.not-found{
+    text-align: center;
+    margin:20px;
+}
+
+.transition-fade{
+ opacity: 1;
+ transition: 500ms;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

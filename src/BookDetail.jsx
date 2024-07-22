@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./bookdetail.css";
+import { motion } from "framer-motion";
 
 const BookDetail = () => {
   const { id } = useParams();
@@ -28,9 +29,15 @@ const BookDetail = () => {
   }
 
   return (
-    <>
+    <motion.div 
+    className="detail-transition"
+    initial={{ opacity: 0, x: 100 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -100 }}
+    transition={{ duration: 0.5 }}>
+  
       <header className="header">
-        <button className="back-button" onClick={() => navigate(-1)}>
+        <button className="back-button" onClick={() => navigate("/")}>
           BACK
         </button>
       </header>
@@ -42,7 +49,7 @@ const BookDetail = () => {
         <img src={book.src} alt={book.alt} />
         <p>{book.description}</p>
       </div>
-    </>
+      </motion.div>
   );
 };
 
