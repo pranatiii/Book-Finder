@@ -1,12 +1,12 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider, useLocation, Routes, Route } from "react-router-dom";
-import Books from "./Books";
-import BookDetail from "./BookDetail";
+import Books from "./Book-finder/Books";
+import BookDetail from "./Book-finder/BookDetail";
 import Page404 from "./Page404";
 import { AnimatePresence } from "framer-motion";
 
 
-// Configure the router with the correct basename
+
 const router = createBrowserRouter(
   [
     {

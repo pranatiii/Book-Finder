@@ -15,10 +15,11 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async (_, { rejec
 const booksSlice = createSlice({
   name: 'books',
   initialState: {
-    items: [],
-    loading: false,
+    items: [],  //All the items
+    filteredItems: [], // Filtered items
+    loading: true,
     error: null,
-    searchQuery: '', // Add search query state
+    searchQuery: '', // current Serach query
   },
   reducers: {
     addBook: (state, action) => {
@@ -31,8 +32,16 @@ const booksSlice = createSlice({
       state.items = [];
     },
     setSearchQuery: (state, action) => {
-      state.searchQuery = action.payload; // Action to set search query
+      state.searchQuery = action.payload;
+      // Filter books based on search query
+      state.filteredItems = state.items.filter(book =>
+        book.title.toLowerCase().includes(state.searchQuery.toLowerCase())
+      );
     },
+    clearSearch: (state) => {
+      state.searchQuery = '';
+      state.filteredItems = state.items;
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -43,6 +52,7 @@ const booksSlice = createSlice({
       .addCase(fetchBooks.fulfilled, (state, action) => {
         state.loading = false;
         state.items = action.payload;
+        state.filteredItems = action.payload; // Initialize filteredItems
       })
       .addCase(fetchBooks.rejected, (state, action) => {
         state.loading = false;
@@ -51,9 +61,6 @@ const booksSlice = createSlice({
   },
 });
 
-export const { addBook, removeBook, clearBooks, setSearchQuery } = booksSlice.actions;
-export default booksSlice.reducer; 
-
-
-
+export const { addBook, removeBook, clearBooks, setSearchQuery, clearSearch } = booksSlice.actions;
+export default booksSlice.reducer;
 

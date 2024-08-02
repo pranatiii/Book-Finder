@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import "./bookfinder.css";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchBooks } from "./booksSlice.jsx";
+import { fetchBooks } from "../Store/booksSlice.jsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SearchBar from "./Searchbar.jsx";
