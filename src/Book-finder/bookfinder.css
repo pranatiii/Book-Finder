@@ -173,6 +173,24 @@ footer {
   transition: 500ms;
 }
 
+/* SearchBar clear button */
+
+.clear-button {
+  padding: 5px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.clear-button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
